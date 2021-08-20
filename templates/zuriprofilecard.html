@@ -1,0 +1,173 @@
+{% load static %}
+<!-- Add icon library -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>David Profile</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{% static 'css/bootstrap/bootstrap.css' %}">
+<link rel="stylesheet" href="{% static 'css/david.css' %}">
+</head>
+<body>
+<br>
+<br>
+<div class="row">
+<div class="col-3">
+<div class="contact-form">
+<div class="card">
+	<div class="card-header"><h2 class="header-text">Get In Touch</h2></div>
+	<div class="card-body">
+		<form method="POST">
+			{% csrf_token %}
+			
+			<!-- <label>Name</label><br>
+			<input type="text" name="" placeholder="Your Name">
+			<br>
+			<br>
+			<label>Email</label><br>
+			<input type="email" name="" placeholder="">
+			<br>
+			<br>
+			<label>Response</label><br>
+			<textarea name="response" placeholder="Write Something..." style="height: 200px;"></textarea> -->
+			{{form.non_field_errors}}
+			<br>
+			<br>
+			{{form.message.errors}}
+			{{form.message }}
+			{{form.sender.errors}}
+			{% for field in form %}
+			{{field.errors}}
+			<label>{{field.label}}</label><br>
+			{{field}}
+			<br>
+			<br>
+
+			{% endfor %}
+
+			<p><button type="submit">Contact</button></p>
+		</form>
+	</div>
+</div>
+</div>
+</div>
+<div class="col-5">
+<div class="profile">
+<div class="card">
+	<br>
+	<div class="card-body">
+		<h1 class="display-2">David Katchy</h1>
+		<br>
+		<img src="{% static 'img/profile1.jpg' %}" alt="my profile img" class="profile-img">
+		
+		<p class="title">Backend Developer</p>
+		<a href="#"><i class="fa fa-zuri"><img src=""></i></a>
+		<a href="#"><i class="fa fa-messaging"><img src="{% static 'img/004.png' %}"></i></a>	
+		<a href="#"><i cl	ass="fa fa-whatsapp"><img src="{% static 'img/121.png' %}"></i></a>
+		<a href="#"><i cl	ass="fa fa-telegram"><img src="{% static 'img/224.png' %}"></i></a>
+		<br>
+		<br>
+		<p><button style="">Hire Me!</button></p>
+	
+	</div>
+</div>
+</div>
+</div>
+<div class="col-4">
+<div class='zuri-card' style=" float: right ;margin-right: 40px;">
+<div class="card" style="padding: 40px 40px 40px 40px;">
+	<center>
+	<div class="card-header">
+	<h1 class="display-4 description-header">Experience</h1>
+	</div>
+	<div class="card-body">
+			
+			<center>
+			<ul>
+				
+				<li class= ''>
+					<h3 class='display-4 text-primary'>Django<br>Intern</h3>
+					<h4 class="text-muted">Zuri NG</h4><span class="text-muted">2020-2021</span>
+				</li>
+				<li class= ''>
+					<h3 class='display-4 text-primary'>Record<br>Analyst</h3>
+					<h4 class="text-muted">UnLbl NG</h4><span class="text-muted">2017-<em>Present</em></span>
+				</li>
+				<li class= ''>
+					<h3 class='display-4 text-primary'>Factory<br>Manager</h3>
+					<h4 class="text-muted">CraftSpark NG</h4><span class="text-muted">2017-<em>Present</em></span>
+				</li>
+			</ul>
+			</center>
+		
+
+	</div>
+	</center>
+</div>
+</div>
+</div>
+</div>
+<br>
+<br>
+<div class="container">
+<div class="row">
+	
+	<div class="col-6">
+		<div class="card">
+		<div class="card-header display-4">Tools/Skills</div>
+			<ul class="list-group">
+				<li><img src="{% static 'img/python.png' %}" class="social-icon"> <span class="display-4"> &middot Python</span></li>
+				<li><img src="{% static 'img/psql.png' %}" class="social-icon"> <span class="display-4"> &middot PostGreSQL</span></li>
+				<li><img src="{% static 'img/django.png' %}" class="social-icon"> <span class="display-4"> &middot Django</span></li>
+				<li><img src="{% static 'img/c#.png' %}" class="social-icon"> <span class="display-4"> &middot C#</span></li>
+				
+			</ul>
+			<br>
+			<br>
+		</div>
+	</div>
+	<div class="col-6">
+		<div class="card">
+		<div class="card-header display-4">Past Projects</div>
+			<br>
+			<ul class="list-group">
+				<li><div class='display-4 text-primary'>Pulvr</div>
+					<div class="text-muted">File Management System</div>
+				</li>
+				<br>
+				<li><div class='display-4 text-primary'>Dinario</div>
+					<div class="text-muted">Learning Management System</div>
+				</li>
+				<br>
+				<li><div class='display-4 text-primary'>Manu</div>
+					<div class="text-muted">Desktop Calculator</div>
+				</li>
+				<br>
+				<li><div class='display-4 text-primary'>Woof</div>
+					<div class="text-muted">Social Website</div>
+				</li>
+				<br>
+				<li><div class='display-4 text-primary'>Vynee</div>
+					<div class="text-muted">Random Playlist Generator</div>
+				</li>
+				<br>
+				<br>
+				<br>
+				
+			</ul>
+		</div>
+	</div>
+	</div>
+</div>
+</div>
+<div class="row">
+<div class="col-12">
+<center>
+	<img src="{% static 'img/i4g_and_zuri.jpg' %}" style="max-width: 300px; max-height: 300px">
+	<p>Find out more about Zuri <a href="https://zuri.team" target="_blank">here!</a></p>
+</center>
+</div>
+</div>
+</body>
+</html>
+

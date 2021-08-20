@@ -1,0 +1,124 @@
+.text-area{
+	height: 200px;
+}
+.card:hover{
+	border-color: #225;
+	border-style: outset;
+	border-width: 5px 5px 5px 5px;
+	transition: .7s;
+}
+.contact-form {
+	float: left;
+	padding: 0px 0px 0px 0px;
+	margin-right: 0px;
+}
+.zuri-card .card{
+	/*float: right;*/
+	background-color: #eee;
+}
+.contact-form .card{
+	background-color: #eee;
+	padding: 20px 20px 20px 20px;
+	margin-left: 30px;
+}
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0 0, 0.2);
+	max-width: 600px;
+	margin: auto;
+	text-align: center; 
+	background-color: #ccc;
+	border-radius: 30px;
+}
+
+.card-body{
+	padding: 5px 10px 5px 10px;
+}
+.name{
+	/*font-family: serif; */
+	font-size: 2.5em;
+}
+.title {
+	color: grey;
+	font-size: 18px;
+	/*font-family: monospace; */
+}
+
+button {
+	border: none;
+	outline: 0;
+	display: inline-block;
+	padding: 8px;
+	color: white;
+	background-color: #000;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
+	border-radius: 40px; 
+}
+
+a {
+	text-decoration: none;
+	font-size: 22px;
+	color: black;
+}
+
+button:hover, a:hover {
+	opacity: 0.7;
+}
+
+body{
+	/*font-family: sans-serif; */
+}
+
+img.profile-img{
+	max-width: 500px;
+	max-height: 300px;
+	border-style: outset;
+	border-color: #225;
+	border-radius: 5px;
+}
+
+input:hover{
+	border-color: #555;
+	border-style: outset;
+	border-radius: 5px;
+}
+
+input:onclick{
+	border-color: #555;
+	
+}
+
+input{
+	padding: 5px 5px 5px 5px;
+	clear: both;
+}
+
+label{
+	align-self: right;
+	clear: both;
+}
+.header-text{
+	/*font-familyserif; */
+	font-weight: bold;
+}
+
+ul{
+	list-style-type: none;
+	
+}
+
+.description-header{
+	/*font-size: 1.2em;*/
+	/*font-weight: bold;*/
+	/*font-stretch: ultra-condensed;*/
+	max-width: 300px;
+
+}
+
+img.social-icon{
+	height: 150px;
+	width: 150px;
+	border-radius: 10%;
+}

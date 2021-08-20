@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sent!</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/david.css' %}">
+</head>
+<body>
+	<div class="nav">
+		<a href="{% url 'home-page' %}"> << Go Back</a>
+	</div>
+	<center>
+		<div class="card">
+		<br>
+		<img src="{% static 'img/checkmark.jpeg' %}" >
+		<br>
+		<h1>Sent!</h1>
+		<br>
+		<br>
+	</div>
+</body>
+</html>
